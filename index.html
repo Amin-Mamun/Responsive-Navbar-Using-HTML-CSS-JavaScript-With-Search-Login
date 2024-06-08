@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar Using HTML CSS & JavaScript | With Search & Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css" integrity="sha512-OQDNdI5rpnZ0BRhhJc+btbbtnxaj+LdQFeh0V9/igiEPDiWE2fG+ZsXl0JEH+bjXKPJ3zcXqNyP4/F/NegVdZg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav_logo"><img class="logo_img" src="Img/38494102-designstyle-change-l.png" alt="Logo"></a>
+
+        <div class="nav_menu" id="nav-menu">
+          <ul class="nav_list">
+
+            <li class="nav_item">
+              <a href="#" class="nav_link">Home</a>
+            </li>
+
+            <li class="nav_item">
+                <a href="#" class="nav_link">About Us</a>
+              </li>
+
+              <li class="nav_item">
+                <a href="#" class="nav_link">Services</a>
+              </li>
+
+              <li class="nav_item">
+                <a href="#" class="nav_link">Featured</a>
+              </li>
+
+              <li class="nav_item">
+                <a href="#" class="nav_link">Contact Us</a>
+              </li>
+          </ul>
+
+          <div class="nav_close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav_actions">
+                 
+                 <!-- Search button -->
+            <i class="ri-search-line nav_search" id="search-btn"></i>
+            <!-- Login button -->
+            <i class="ri-user-line nav_login" id="login-btn"></i>
+            <!-- Toggle button -->
+          <div class="nav_toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="search" id="search">
+       <form action="" class="search_form">
+        <i class="ri-search-line search_icon"></i>
+        <input type="search" placeholder="What are you looking for?" class="search_input">
+       </form>
+       <i class="ri-close-line search_close" id="search-close"></i>
+    </div>
+    <div class="login" id="login">
+       <form action="" class="login_form">
+        <h2 class="login_title">Log In</h2>
+
+        <div class="login_group">
+          <div>
+            <label for="email" class="login_label">Email</label>
+              <input type="email" placeholder="Write your email" id="email" class="login_input">
+          </div>
+
+          <div>
+            <label for="password" class="login_label">Password</label>
+              <input type="password" placeholder="Enter your password" id="password" class="login_input">
+          </div>
+         </div>
+
+         <div>
+          <p class="login_signup">
+             You do not have an account? <a href="">Sign up</a>
+          </p>
+          <a href="#" class="login_forgot">
+            You forgot your password
+          </a>
+
+          <button type="submit" class="login_button">Log In</button>
+         </div>
+       </form>
+
+       <i class="ri-close-line login_close" id="login-close"></i>
+    </div>
+    <main class="main">
+       <img src="Img/bg.jpg" alt="image" class="main_bg">
+    </main>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
